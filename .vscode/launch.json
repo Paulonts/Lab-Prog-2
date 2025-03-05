@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SAMSUNG/Desktop/Lab-Prog-2",
-      "program": "c:/Users/SAMSUNG/Desktop/Lab-Prog-2/build/Debug/outDebug",
+      "cwd": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/aula 4",
+      "program": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/aula 4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
