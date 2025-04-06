@@ -27,9 +27,10 @@ int validarCPF(const char *cpf) {
     
     // Cálculo do primeiro dígito verificador
     for (i = 0, j = 10; i < 9; i++, j--) {
-        digito1 += numeros[i] * j;
+        digito1 += numeros[i] * j;   /*"digito1" pega a variavel "numeros"(onde esta depositado o seu cpf) e pega somente os 9 primeiros numeros e faz *10 decrementando e soma tudo*/
+                                     /*exemplo cpf = 12345678978 (1*10, 2*9, 3*8, 4*7, 5*6, 6*5, 7*4, 8,*3, 9*2, e depois ele soma tudo e armazena na variavel digito1)  */ 
     }
-    digito1 = (digito1 * 10) % 11;
+    digito1 = (digito1 * 10) % 11;   
     if (digito1 == 10) digito1 = 0;
     if (digito1 != numeros[9]) return 0;
     

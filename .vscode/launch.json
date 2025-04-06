@@ -2,14 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "C/C++ launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/output/lerArquivo.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": false
+        }
+      ]
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/aula 4",
-      "program": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/aula 4/build/Debug/outDebug",
+      "cwd": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/atividade 3",
+      "program": "c:/Users/SAMSUNG/Desktop/semestre3/Lab-Prog-2/atividade 3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

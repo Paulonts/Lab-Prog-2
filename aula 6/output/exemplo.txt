@@ -1,0 +1,2 @@
+aprendendo a gravar linhas em arquivo
+modificando arquivo
