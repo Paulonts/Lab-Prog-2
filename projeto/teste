@@ -1,0 +1,70 @@
+/*
+Criar um programa em C que permita cadastrar, listar e deletar alunos utilizando arquivos no
+formato CSV (valores separados por ponto e vírgula ;).
+
+Requisitos
+1. Estrutura do Aluno
+o Nome (máx. 100 caracteres)
+o Idade (inteiro)
+o Nota (float)
+
+2. Menu do Sistema
+1 - Cadastrar Aluno
+2 - Listar Alunos
+3 - Deletar base de dados
+4 - Sair
+3. Regras
+o Os dados devem ser armazenados em um arquivo alunos.csv.
+o As informações de cada aluno devem ser armazenadas em uma linha, separadas
+por ;
+o A listagem deve mostrar os dados no formato:
+Nome: João | Idade: 20 | Nota: 8.5
+*/
+#include <stdio.h>
+#include <string.h>
+
+typedef struct{
+    char nome[100];
+    int idade;
+    float nota;
+}Dados;
+
+void cadastrarAluno(Dados *dados){
+
+}
+void menu(){
+
+    int opcao = 0;
+    int quantidadeAluno;
+    printf("digite quantos alunos deseja cadastrar: ");
+    scanf("%d\n", &quantidadeAluno);
+    Dados dados[quantidadeAluno];
+
+
+    do{
+        printf("[escolha uma das opcoes]");
+        printf("1- Cadastrar aluno\n");
+        printf("2- Listar aluno\n");
+        printf("3- Deletar base de dados\n");
+        printf("4- Sair\n");
+        scanf("%d", &opcao);
+
+        switch (opcao){
+        case 1:
+            for (int i = 0; i < quantidadeAluno; i++){
+                printf("aluno: %d", i + 1);
+                cadastrarAluno(dados);
+            }
+            
+            break;
+
+        default:
+            break;
+        }
+
+    } while (opcao < 4);
+}
+
+int main(){
+    menu();
+}
